@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/rcat"
+
+begin
+  RCat::Application.new(ARGV).run
+  rescue Errno::ENOENT => exception
+    abort "rcat: #{exception.message}"
+  rescue OptionParser::InvalidOption => exception
+    abort "rcat: #{exception.message}\nTry `rcat -?' for more information"
+end

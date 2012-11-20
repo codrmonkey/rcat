@@ -1,0 +1,10 @@
+This is a basic test file.
+It contains some text and lines and such.
+
+Also a space or two for compressing and numbering fun.
+1
+	tab!
+
+
+
+Fin.
